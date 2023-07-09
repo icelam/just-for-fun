@@ -42,4 +42,4 @@ To build the project for production:
 yarn build
 ```
 
-All the build files can be found in `../dist` folder.
+All the build files can be found in `dist` folder.
