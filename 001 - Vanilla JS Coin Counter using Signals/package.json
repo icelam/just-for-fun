@@ -1,0 +1,23 @@
+{
+  "name": "coin-counter",
+  "version": "1.0.0",
+  "description": "This is a simple coin counter which demonstrates how to use Signals in Vanilla JS application.",
+  "main": "index.html",
+  "license": "MIT",
+  "scripts": {
+    "start": "parcel src/index.html --open",
+    "build": "parcel build src/index.html",
+    "build:demo": "parcel build src/index.html --out-dir=../docs/coin-counter --public-url=./"
+  },
+  "dependencies": {
+    "@preact/signals-core": "1.3.0",
+    "parcel-bundler": "^1.6.1"
+  },
+  "devDependencies": {
+    "@babel/core": "7.2.0",
+    "sass": "^1.63.6"
+  },
+  "resolutions": {
+    "@babel/preset-env": "7.13.8"
+  }
+}

@@ -1,0 +1,169 @@
+@use 'sass:math';
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800&display=swap');
+
+// Functions
+@import './text-style';
+
+$card-border-width: 0.5rem;
+$toast-border-width: 0.25rem;
+
+$color-white: #ffffff;
+$color-black: #000000;
+$color-green: #2cbb5d;
+$color-red: #ef4743;
+$color-blue: #1890ff;
+$color-light-blue: #47b4e6;
+$color-yellow: #ffc01e;
+$color-shadow: rgba(0, 0, 0, 0.3);
+
+$color-app-text: $color-black;
+$color-app-title: $color-white;
+$color-app-title-outline: $color-black;
+$color-app-title-shadow: $color-shadow;
+$color-app-background: $color-blue;
+$color-card-border: $color-black;
+$color-card-background: $color-white;
+$color-card-shadow: $color-shadow;
+$color-button-text: $color-white;
+$color-toast-border: $color-black;
+$color-toast-background: $color-yellow;
+$color-toast-shadow: $color-shadow;
+$color-toast-text: $color-black;
+
+body {
+  background-color: $color-app-background;
+  background-image: radial-gradient(
+    darken($color-app-background, 10%) 0.125rem,
+    transparent 0
+  );
+  background-size: 1.5rem 1.5rem;
+  color: $color-app-text;
+  font-family: 'Nunito', sans-serif;
+  padding: 1.5rem;
+  max-width: 1280px;
+  margin: auto;
+}
+
+h1 {
+  $stroke-width: 6;
+  color: $color-app-title;
+  filter: drop-shadow(calc(#{$stroke-width} * 1px) calc(#{$stroke-width} * 1px) 0 $color-app-title-shadow);
+  font-size: 3rem;
+  font-weight: 800;
+  line-height: 3.5rem;
+  margin: 1.25rem 0 2.25rem 0;
+  text-align: center;
+  text-shadow: text-outline($stroke-width, $color-app-title-outline);
+}
+
+section {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(1, 1fr);
+
+  @media screen and (min-width: 576px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media screen and (min-width: 992px) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.card {
+  background: $color-card-background;
+  border-radius: 0.75rem;
+  border: $card-border-width solid $color-card-border;
+  box-shadow: $card-border-width $card-border-width 0 $color-card-shadow;
+  overflow: hidden;
+  text-align: center;
+  font-size: 1.5rem;
+
+  p {
+    margin: 1rem;
+  }
+
+  img {
+    aspect-ratio: 1 / 1;
+    height: 5rem;
+    object-fit: contain;
+    filter: drop-shadow(0.25rem 0.25rem 0 $color-shadow);
+  }
+
+  hr {
+    background-color: $color-card-border;
+    border: 0;
+    clear: both;
+    color: transparent;
+    height: $card-border-width;
+    margin: 0;
+    padding: 0;
+  }
+
+  .button-group {
+    background-color: $color-card-border;
+    display: grid;
+    gap: $card-border-width;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  button {
+    background-color: transparent;
+    border-radius: 0;
+    border: 0;
+    box-shadow: none;
+    color: inherit;
+    display: inline-block;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: 900;
+    margin: 0;
+    outline: none;
+    padding: 0.375rem 0.625rem;
+    position: relative;
+    text-align: center;
+    white-space: nowrap;
+
+    &:active {
+      filter: brightness(85%);
+    }
+  }
+
+  .plus-button {
+    background-color: $color-green;
+    color: $color-button-text;
+  }
+
+  .minus-button {
+    background-color: $color-red;
+    color: $color-button-text;
+  }
+}
+
+.toast {
+  $toast-width: 13.5rem;
+  background: $color-toast-background;
+  border-radius: 0.5rem;
+  border: $toast-border-width solid $color-toast-border;
+  bottom: 1.5rem;
+  box-shadow: $toast-border-width $toast-border-width 0 $color-toast-shadow;
+  box-sizing: border-box;
+  color: $color-toast-text;
+  font-weight: bold;
+  left: 50%;
+  margin-left: math.div($toast-width, 2) * -1;
+  min-width: $toast-width;
+  max-width: $toast-width;
+  padding: 0.75rem;
+  position: fixed;
+  text-align: center;
+  visibility: hidden;
+
+  @media screen and (min-width: 576px) {
+    $toast-width: 27rem;
+    margin-left: math.div($toast-width, 2) * -1;
+    min-width: $toast-width;
+    max-width: $toast-width;
+  }
+}
