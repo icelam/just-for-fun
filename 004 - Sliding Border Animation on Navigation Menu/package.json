@@ -1,0 +1,16 @@
+{
+  "name": "sliding-border-menu",
+  "version": "1.0.0",
+  "description": "Simple navigation with sliding border animation created using CSS and JavaScript",
+  "main": "index.html",
+  "license": "MIT",
+  "scripts": {
+    "clean:demo": "npx rimraf ../docs/sliding-border-menu",
+    "start": "parcel src/index.html --open",
+    "build": "parcel build src/index.html",
+    "build:demo": "yarn clean:demo && parcel build src/index.html --out-dir=../docs/sliding-border-menu --public-url=./"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.12.5"
+  }
+}
