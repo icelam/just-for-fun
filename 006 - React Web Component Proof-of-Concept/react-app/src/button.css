@@ -1,0 +1,26 @@
+button {
+  background-color: transparent;
+  border-radius: 1.875rem;
+  border: 0;
+  box-shadow: none;
+  color: #ffffff;
+  display: inline-block;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  margin: 0;
+  outline: none;
+  padding: 1rem;
+  position: relative;
+  text-align: center;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+button:hover {
+  filter: brightness(120%);
+}
+
+button:active {
+  filter: brightness(90%);
+}

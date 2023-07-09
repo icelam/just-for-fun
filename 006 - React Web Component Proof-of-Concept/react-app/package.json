@@ -1,0 +1,33 @@
+{
+  "name": "react-component",
+  "version": "1.0.0",
+  "description": "Simple React component that will be inserted into other frontend application via web component",
+  "license": "MIT",
+  "main": "src/index.tsx",
+  "homepage": "./",
+  "dependencies": {
+    "loader-utils": "^3.2.1",
+    "raw-loader": "^4.0.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-scripts": "^5.0.1"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.14",
+    "@types/react-dom": "^18.2.6",
+    "craco": "^0.0.3",
+    "mini-css-extract-plugin": "^2.7.6",
+    "typescript": "^5.1.6"
+  },
+  "scripts": {
+    "start": "craco start",
+    "build": "BUILD_PATH='../dist/react-app' craco build --output-hashing=none",
+    "build:demo": "BUILD_PATH='../../docs/react-web-component-poc/react-app' craco build --output-hashing=none"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}

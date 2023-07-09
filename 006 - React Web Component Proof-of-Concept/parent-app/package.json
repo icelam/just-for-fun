@@ -1,0 +1,20 @@
+{
+  "name": "parent-app",
+  "version": "1.0.0",
+  "description": "Simple HTML application where the React app will be inserted as web component",
+  "license": "MIT",
+  "scripts": {
+    "clean:demo": "npx rimraf ../../docs/react-web-component-poc",
+    "start": "parcel ./src/index.html --open --dist-dir=../dist",
+    "build": "parcel build ./src/index.html --dist-dir=../dist",
+    "build:demo": "yarn clean:demo && parcel build ./src/index.html --dist-dir=../../docs/react-web-component-poc --public-url=./"
+  },
+  "devDependencies": {
+    "parcel": "^2.9.3",
+    "parcel-resolver-ignore": "^2.1.5",
+    "posthtml-inline-svg": "^0.2.0"
+  },
+  "parcelIgnore": [
+    "react-app/.+"
+  ]
+}

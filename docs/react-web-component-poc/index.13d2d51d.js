@@ -1,0 +1,2 @@
+const e=/^document.querySelector\(["']react-button["']\).setAttribute\(["']color["'],\s?["'](#[0-9a-fA-F]{3}|#[0-9a-fA-F]{6}|#[0-9a-fA-F]{8}|[a-zA-z]+)["']\);$/,t=document.querySelector("#run-code-button");t.addEventListener("click",()=>{let t=document.querySelector(".runnable-code-block pre").textContent,o=t.match(e);if(!(null!==o)){alert("Edited code is not in correct format. Due to security reason, the code is not executed.");return}document.querySelector("react-button").setAttribute("color",o[1])});
+//# sourceMappingURL=index.13d2d51d.js.map

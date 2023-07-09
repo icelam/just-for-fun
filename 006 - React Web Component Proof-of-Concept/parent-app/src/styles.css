@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900');
+
+/* Non-necessary styles */
+* {
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
+  outline: none;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 16px;
+  padding: 1.5rem;
+  font-family: 'Roboto', sans-serif;
+  background-color: #14151a;
+  color: #c4c3ca;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 4rem;
+  font-weight: 300;
+  line-height: 4.5rem;
+  color: #ffffff;
+  margin: 2.625rem 0;
+}
+
+p {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+a {
+  color: #c4c3ca70;
+  cursor: pointer;
+}
+
+a:hover {
+  color: #c4c3ca;
+}
+
+svg {
+  display: block;
+}
+
+code {
+  background: #67686e70;
+  color: #fff;
+  padding: 0.125rem 0.5rem;
+  border-radius: 0.25rem;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+.runnable-code-block {
+  display: grid;
+  grid-template-columns: 2rem auto;
+  gap: 0.5rem;
+  margin: 1rem 0;
+  align-items: start;
+}
+
+.runnable-code-block button {
+  margin: 0.5rem 0;
+  padding: 0;
+  background-color: transparent;
+  color: #c4c3ca70;
+  transition: all ease-in-out 100ms;
+}
+
+.runnable-code-block button:hover {
+  color: #c4c3ca;
+}
+
+pre {
+  background: #67686e70;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  white-space: pre-wrap;
+  display: block;
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+pre[contenteditable='true']:focus {
+  outline: 1px solid #c4c3ca;
+}
+
+/* Button styles for demonstration */
+button {
+  background-color: #ef4743;
+  border-radius: 0;
+  border: 0;
+  box-shadow: none;
+  color: #ffffff;
+  display: inline-block;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  margin: 0;
+  outline: none;
+  padding: 1rem;
+  position: relative;
+  text-align: center;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.button-group {
+  display: flex;
+  gap: 1rem;
+  margin: 3rem 0;
+}
+
+button:hover {
+  filter: brightness(120%);
+}
+
+button:active {
+  filter: brightness(90%);
+}
