@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "./static/css/main.ac287f06.css",
+    "main.js": "./static/js/main.2eac5d2f.js",
+    "static/media/milad-fakurian-E8Ufcyxz514-unsplash.jpg": "./static/media/milad-fakurian-E8Ufcyxz514-unsplash.a5f3a63e654db02c3f87.jpg",
+    "index.html": "./index.html",
+    "static/media/plus.svg": "./static/media/plus.eb2028b0631f87a34d9207a28fb13ec9.svg",
+    "static/media/x.svg": "./static/media/x.f5290c66f7a31abcf80337256878d161.svg",
+    "static/media/check.svg": "./static/media/check.1b401646b9d05bc68725.svg",
+    "main.ac287f06.css.map": "./static/css/main.ac287f06.css.map",
+    "main.2eac5d2f.js.map": "./static/js/main.2eac5d2f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ac287f06.css",
+    "static/js/main.2eac5d2f.js"
+  ]
+}

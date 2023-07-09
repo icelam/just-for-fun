@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap');
+
+:root {
+  --color-white: #ffffff;
+  --color-neutral-shade-1: #eeeff1;
+  --color-neutral-shade-2: #9fa1a7;
+  --color-neutral-shade-3: #5c5e64;
+  --color-neutral-shade-4: #45474a;
+  --color-neutral-shade-5: #313337;
+  --color-neutral-shade-6: #232529;
+  --color-neutral-shade-7: #1c1d1f;
+  --color-black: #00000;
+
+  --common-shadow: 0 0 0 0.0625rem rgba(0, 0, 0, 0.04), 0 0.0625rem 0.25rem 0 rgba(0, 0, 0, 0.12);
+  --common-focus-shadow: 0 0 0 0.125rem rgba(255, 255, 255, 0.24);
+}
+
+* {
+  -webkit-font-smoothing: auto;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
+  outline: none;
+}
+
+::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+::-webkit-scrollbar-button {
+  display: none;
+}
+
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--color-neutral-shade-5);
+  border-radius: 0.5rem;
+  border-width: 0;
+}
+
+::-webkit-scrollbar-track {
+  background: none;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+  height: 100%;
+}
+
+body {
+  line-height: 1.5;
+  font-family: 'Inter', sans-serif;
+  background: var(--color-neutral-shade-7) url(./images/milad-fakurian-E8Ufcyxz514-unsplash.jpg) no-repeat center/cover;
+  color: var(--color-neutral-shade-1);
+  box-sizing: border-box;
+  font-weight: 300;
+}
+
+#root {
+  height: 100%;
+  padding: 3rem 1.5rem;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  padding: 0;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  background-color: transparent;
+  font-family: inherit;
+  font-size: 1rem;
+  line-height: 1em;
+  text-decoration: none;
+  cursor: pointer;
+  margin: 0;
+  color: var(--color-neutral-shade-2);
+  transition: color ease 0.25s;
+
+  &:hover,
+  &:focus-visible {
+    color: var(--color-neutral-shade-1);
+  }
+
+  &:focus-visible {
+    outline: 0.0625rem solid var(--color-neutral-shade-2);
+  }
+
+  &:disabled {
+    color: var(--color-neutral-shade-3);
+    cursor: not-allowed;
+  }
+
+  svg {
+    display: block;
+  }
+}
+
+#app {
+  width: 100%;
+  max-width: 375px;
+  margin: 0 auto;
+  background-color: var(--color-neutral-shade-6);
+  box-shadow: var(--common-shadow), var(--color-neutral-shade-5) 0 0 0 0.0625rem inset;
+  box-sizing: border-box;
+  border-radius: 0.5rem;
+  height: 100%;
+  max-height: 500px;
+  display: grid;
+  grid-template-rows: min-content min-content auto;
+  opacity: 0.95;
+}
+
+.app-title {
+  font-size: 0.75rem;
+  line-height: 1;
+  font-weight: 500;
+  margin: 0.75rem 1rem 0;
+  color: var(--color-neutral-shade-2);
+}
+
+.add-item-form {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr min-content;
+  border-bottom: 0.0625rem solid var(--color-neutral-shade-3);
+
+  input[type='text'] {
+    display: flex;
+    width: 100%;
+    background-color: transparent;
+    font-family: inherit;
+    font-weight: inherit;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    padding: 1rem;
+    overflow: hidden;
+    box-sizing: border-box;
+    color: var(--color-neutral-shade-1);
+    border: none;
+
+    &::placeholder {
+      color: var(--color-neutral-shade-3);
+    }
+  }
+
+  button {
+    margin: 1rem 0.75rem 1rem 0;
+    width: 1.5rem;
+    height: 1.5rem;
+    font-size: 1.5rem;
+    box-sizing: content-box;
+    text-align: center;
+  }
+}
+
+.todo-list {
+  overflow: auto;
+
+  ul {
+    margin: 0;
+    padding: 0;
+    display: grid;
+
+    li {
+      list-style: none;
+    }
+  }
+
+  .todo-item {
+    input[type="checkbox"] {
+      margin-left: -100%;
+      opacity: 0;
+      position: absolute;
+    }
+
+    overflow: hidden;
+    // padding: 1rem 0.75rem 1rem 1rem;
+    display: grid;
+    grid-template-columns: auto min-content;
+    align-items: start;
+    gap: 1rem;
+    overflow-wrap: anywhere;
+    transition: color ease 0.25s;
+
+    label {
+      cursor: pointer;
+      display: inline-grid;
+      grid-template-columns: min-content auto;
+      gap: 1rem;
+      margin: 1rem 0 1rem 1rem;
+
+      &:before {
+        content: '';
+        display: block;
+        width: 1.25rem;
+        height: 1.25rem;
+        border: 0.0625rem solid var(--color-neutral-shade-3);
+        border-radius: 50%;
+        background-size: 0.75rem;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        box-sizing: border-box;
+        margin: 0.125rem 0;
+        background: url(./icons/check.svg) center / 0 no-repeat;
+        transition: all ease 0.25s;
+      }
+    }
+
+    input[type="checkbox"]:checked + label:before {
+      background-size: 0.75rem;
+    }
+
+    input[type="checkbox"]:focus-visible + label:before,
+    label:hover:before {
+      border-color: var(--color-neutral-shade-2);
+    }
+
+    button {
+      margin: 1rem 0.75rem 1rem 0;
+      width: 1.5rem;
+      height: 1.5rem;
+      font-size: 1.5rem;
+      box-sizing: content-box;
+      text-align: center;
+    }
+
+    &--completed {
+      color: var(--color-neutral-shade-2);
+      text-decoration: line-through
+    }
+  }
+}
+
+.attribution {
+  position: fixed;
+  bottom: 0.25rem;
+  font-size: 0.75rem;
+  width: 100%;
+  left: 0;
+  text-align: center;
+  color: var(--color-neutral-shade-1);
+  opacity: 0.7;
+
+  a {
+    color: inherit;
+
+    &:hover,
+    &:focus-visible {
+      color: var(--color-neutral-shade-6);
+    }
+  }
+}
