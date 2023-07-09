@@ -10,3 +10,4 @@ Collection of projects created for testing out frontend features and effects.
 
 ### CSS
 1. [CSS Pie Chart](./002%20-%20CSS%20Pie%20Chart/)
+2. [Comics Style Text Effect](./003%20-%20Comics%20Style%20Text%20Outline%20and%20Oblique%20Shadow/)

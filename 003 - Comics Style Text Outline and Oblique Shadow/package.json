@@ -1,0 +1,17 @@
+{
+  "name": "comics-style-text-effect",
+  "version": "1.0.0",
+  "description": "Comics style text outline and oblique shadow using SCSS",
+  "main": "index.html",
+  "license": "MIT",
+  "scripts": {
+    "clean:demo": "npx rimraf ../docs/comics-style-text-effect",
+    "start": "parcel src/index.html --open",
+    "build": "parcel build src/index.html",
+    "build:demo": "yarn clean:demo && parcel build src/index.html --out-dir=../docs/comics-style-text-effect --public-url=./"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.12.5",
+    "sass": "^1.63.6"
+  }
+}
