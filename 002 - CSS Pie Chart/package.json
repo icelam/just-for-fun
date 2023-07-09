@@ -1,0 +1,16 @@
+{
+  "name": "css-pie-chart",
+  "version": "1.0.0",
+  "description": "Pie chart using pure css",
+  "main": "index.html",
+  "license": "MIT",
+  "scripts": {
+    "clean:demo": "npx rimraf ../docs/css-pie-chart",
+    "start": "parcel src/index.html --open",
+    "build": "parcel build src/index.html",
+    "build:demo": "yarn clean:demo && parcel build src/index.html --out-dir=../docs/css-pie-chart --public-url=./"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.12.5"
+  }
+}

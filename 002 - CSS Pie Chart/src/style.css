@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap');
+
+:root {
+  --color-pie-chart-1: #ed6f85;
+  --color-pie-chart-2: #f2a354;
+  --color-pie-chart-3: #f8ce6b;
+  --color-pie-chart-4: #6cbebf;
+  --color-pie-chart-5: #54a1e5;
+
+  --color-white: #ffffff;
+  --color-light-grey: #f6f6fc;
+  --color-grey: #717384;
+  --color-dark-grey: #444550;
+}
+
+html,
+body {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: min-content;
+  min-height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to top right, #7c89d5, #f599a5);
+  padding: 1rem;
+  overflow: auto;
+  font-family: 'Inter', sans-serif;
+}
+
+.pie-chart {
+  color: var(--color-grey);
+  width: 500px;
+  margin: 0;
+  box-shadow: 0 0 0 0.0625rem rgba(0, 0, 0, 0.04), 0 0.0625rem 0.25rem 0 rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.04) 0 0 0 0.0625rem inset;
+  padding: 1rem;
+  background-color: var(--color-light-grey);
+  border-radius: 0.5rem;
+}
+
+.pie-chart .chart {
+  width: 230px;
+  height: 230px;
+  border-radius: 100%;
+  background: radial-gradient(circle, transparent 100%, var(--color-white) 0),
+    conic-gradient(
+      var(--color-pie-chart-1) 0,
+      var(--color-pie-chart-1) 70.8%,
+      var(--color-pie-chart-2) 0,
+      var(--color-pie-chart-2) 77.1%,
+      var(--color-pie-chart-3) 0,
+      var(--color-pie-chart-3) 85.4%,
+      var(--color-pie-chart-4) 0,
+      var(--color-pie-chart-4) 93.7%,
+      var(--color-pie-chart-5) 0,
+      var(--color-pie-chart-5) 100%
+    );
+  margin: 1.5rem auto 1rem;
+}
+
+.pie-chart h2 {
+  margin: 1rem 0;
+  padding: 0 1rem;
+  width: 100%;
+  text-align: center;
+  font-weight: 500;
+  box-sizing: border-box;
+  color: var(--color-dark-grey);
+}
+
+.pie-chart figcaption {
+  font-size: smaller;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.pie-chart figcaption .caption-label {
+  flex: 0 1 auto;
+  margin: 0.125rem 0.5em;
+}
+
+.pie-chart figcaption .caption-label:before {
+  display: inline-block;
+  content: '';
+  width: 0.8em;
+  height: 0.8em;
+  margin-left: 0.4em;
+  height: 0.8em;
+  border-radius: 0.2em;
+}
+
+.pie-chart figcaption .caption-label:nth-child(1):before {
+  background-color: var(--color-pie-chart-1);
+}
+
+.pie-chart figcaption .caption-label:nth-child(2):before {
+  background-color: var(--color-pie-chart-2);
+}
+
+.pie-chart figcaption .caption-label:nth-child(3):before {
+  background-color: var(--color-pie-chart-3);
+}
+
+.pie-chart figcaption .caption-label:nth-child(4):before {
+  background-color: var(--color-pie-chart-4);
+}
+
+.pie-chart figcaption .caption-label:nth-child(5):before {
+  background-color: var(--color-pie-chart-5);
+}
+
+.pie-chart figcaption .caption-label .number {
+  float: right;
+  margin-left: 10px;
+  text-align: right;
+}
