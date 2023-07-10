@@ -1,5 +1,5 @@
 <p align="center">
-    <img alt="Just for Fun" src="./logo.svg" width="100" />
+    <img alt="Just for Fun" src="./logo.svg" width="180" />
 </p>
 <p align="center">
     Collection of projects created for testing out frontend features and effects.
@@ -67,6 +67,24 @@
             <br />
             <img src="https://img.shields.io/badge/React-grey?logo=react" />
             <img src="https://img.shields.io/badge/Web%20Components-grey?logo=data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYxIiBoZWlnaHQ9IjEzMiIgdmlld0JveD0iMCAwIDE2MSAxMzIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IHgxPSIwJSIgeTE9IjUwJSIgeTI9IjUwJSIgaWQ9ImEiPjxzdG9wIHN0b3AtY29sb3I9IiMyQTNCOEYiIG9mZnNldD0iMCUiLz48c3RvcCBzdG9wLWNvbG9yPSIjMjlBQkUyIiBvZmZzZXQ9IjEwMCUiLz48L2xpbmVhckdyYWRpZW50PjxsaW5lYXJHcmFkaWVudCB4MT0iMTAwJSIgeTE9IjUwJSIgeDI9IjAlIiB5Mj0iNTAlIiBpZD0iYyI+PHN0b3Agc3RvcC1jb2xvcj0iI0I0RDQ0RSIgb2Zmc2V0PSIwJSIvPjxzdG9wIHN0b3AtY29sb3I9IiNFN0Y3MTYiIG9mZnNldD0iMTAwJSIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+PHBhdGggZmlsbD0iIzE2NkRBNSIgZD0iTTE2MC42IDY1LjlsLTE3LjQgMjkuMy0yNC40LTI5LjcgMjQuNC0yOC45eiIvPjxwYXRoIGZpbGw9IiM4RkRCNjkiIGQ9Ik0xNDEuMyAxMDAuMmwtMjYuNS0zMS43LTE1LjkgMjYuNiAyNC43IDM2LjF6Ii8+PHBhdGggZmlsbD0iIzE2NkRBNSIgZD0iTTE0MSAzMS40bC0yNi4yIDMxLjgtMTUuOS0yNi42TDEyMy42Ljl6Ii8+PHBhdGggZmlsbD0idXJsKCNhKSIgb3BhY2l0eT0iLjk1IiBkPSJNNjEuMSAzMS40SDE0MUwxMjMuNC43SDc4Ljd6IE0xMTQuOCA2My4zSDE1OWwtMTUuOS0yNi44SDk4LjgiLz48cGF0aCBmaWxsPSJ1cmwoI2MpIiBvcGFjaXR5PSIuOTUiIGQ9Ik0xNDEuMyAxMDAuM0g2MWwxNy42IDMwLjVoNDV6IE0xMTQuOCA2OC40SDE1OWwtMTUuOSAyNi44SDk4LjgiLz48cGF0aCBmaWxsPSIjMDEwMTAxIiBkPSJNNzguNiAxMzAuOEw0MSA2NS44IDc5LjEuOEgzNy45TC40IDY1LjhsMzcuNSA2NXoiLz48L2c+PC9zdmc+" />
+        </td>
+    </tr>
+    <tr>
+        <td align="center" valign="top" width="33.33333%">
+            <a href="./007%20-%20React%20Radio%20Group/">
+                <img src="https://github.com/icelam/just-for-fun/raw/master/007%20-%20React%20Radio%20Group/screenshot.png" width="220" alt="Sliding Border Animation on Navigation Menu"/>
+                <br />
+                <b>React Radio Group</b>
+            </a>
+            <br />
+            <img src="https://img.shields.io/badge/React-grey?logo=react" />
+            <img src="https://img.shields.io/badge/CSS-grey?logo=css3" />
+        </td>
+        <td align="center" valign="top" width="33.33333%">
+            &nbsp;
+        </td>
+        <td align="center" valign="top" width="33.33333%">
+            &nbsp;
         </td>
     </tr>
   </tbody>

@@ -1,0 +1,13 @@
+@import '../../styles/colors';
+
+.chip {
+  display: inline-block;
+  border-radius: 1em;
+  font-size: 0.75rem;
+  line-height: 0.75rem;
+  font-weight: 500;
+  background: $color-accent-shade-1;
+  color: $color-accent-shade-4;
+  padding: 0.25rem 0.75rem;
+  vertical-align: top;
+}

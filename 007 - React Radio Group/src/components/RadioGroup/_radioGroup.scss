@@ -1,0 +1,120 @@
+@import '../../styles/colors';
+
+$radio-group-line-height: 1.25rem;
+$radio-group-label-color: $color-neutral-shade-8;
+$radio-group-label-hover-color: $color-black;
+$radio-group-bullet-default-color: $color-gray;
+$radio-group-bullet-checked-color: $color-primary;
+$radio-group-bullet-hover-color: $color-primary-shade-4;
+$radio-group-bullet-disabled-color: $color-neutral-shade-4;
+$radio-group-bullet-accessability-outline-color: $color-neutral-shade-2;
+
+.radio-group {
+  position: relative;
+
+  &__radio + &__radio {
+    margin-top: 0.75rem;
+  }
+
+  &__radio {
+    input {
+      margin-left: -100%;
+      opacity: 0;
+      position: absolute;
+    }
+
+    label {
+      position: relative;
+      padding-left: 2rem;
+      cursor: pointer;
+      font-weight: 500;
+      font-size: 0.875rem;
+      line-height: $radio-group-line-height;
+      display: inline-block;
+      color: $radio-group-label-color;
+      transition: color 0.3s ease;
+
+      &:before {
+        content: "";
+        position: absolute;
+        width: $radio-group-line-height;
+        height: $radio-group-line-height;
+        border: 0.125rem solid $radio-group-bullet-default-color;
+        border-radius: 50%;
+        left: 0;
+        top: 0;
+        box-sizing: border-box;
+        transition: 0.3s ease;
+      }
+
+      &:after {
+        content: '';
+        position: absolute;
+        width: math.div($radio-group-line-height, 2);
+        height: math.div($radio-group-line-height, 2);
+        top: math.div($radio-group-line-height, 4);
+        left: math.div($radio-group-line-height, 4);
+        background-color: $radio-group-bullet-checked-color;
+        border-radius: 50%;
+        transform: scale(0);
+        transition: 0.3s ease;
+      }
+    }
+
+    input:checked {
+      & + label:before {
+        border-color: $radio-group-bullet-checked-color;
+      }
+
+      & + label:after {
+        transform: scale(1);
+      }
+    }
+
+    @media (hover: hover) {
+      label:hover:before, input:checked + label:hover:before {
+        border-color: $radio-group-bullet-hover-color;
+      }
+
+      label:hover:after {
+        background-color: $radio-group-bullet-hover-color;
+      }
+
+      input:not(:disabled) + label:hover {
+        font-weight: 600;
+        color: $radio-group-label-hover-color;
+      }
+    }
+
+    input:focus-visible + label {
+      font-weight: 600;
+      color: $radio-group-label-hover-color;
+      outline: 0.125rem solid $radio-group-bullet-accessability-outline-color;
+      outline-offset: 0.25rem;
+      border-radius: 0.25rem;
+
+      &:before {
+        border-color: $radio-group-bullet-hover-color;
+      }
+
+      &:after {
+        background-color: $radio-group-bullet-hover-color;
+      }
+    }
+
+    input:disabled {
+      & + label {
+        cursor: not-allowed;
+        color: $radio-group-bullet-disabled-color;
+      }
+
+      & + label:before {
+        border-color: $radio-group-bullet-disabled-color;
+      }
+
+      & + label:after {
+        background-color: $radio-group-bullet-disabled-color;
+      }
+    }
+  }
+}

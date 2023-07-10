@@ -1,0 +1,11 @@
+@import '../../styles/colors';
+
+.horizontal-rule {
+  background-color: $color-neutral-shade-2;
+  border: 0;
+  clear: both;
+  color: transparent;
+  height: 0.125rem;
+  margin: 1rem 0;
+  padding: 0;
+}
