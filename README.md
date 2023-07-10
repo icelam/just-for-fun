@@ -1,6 +1,9 @@
-# Just for fun
-
-Collection of projects created for testing out frontend features and effects.
+<p align="center">
+    <img alt="Just for Fun" src="./logo.svg" width="100" />
+</p>
+<p align="center">
+    Collection of projects created for testing out frontend features and effects.
+</p>
 
 ## List of Projects
 
