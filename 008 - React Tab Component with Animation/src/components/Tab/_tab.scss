@@ -1,0 +1,107 @@
+@import '../../styles/colors';
+
+$tab-prefix: 'tab';
+// IMPORTANT: If the duration of this transition is changed, `transitionOptions` in Tab.tsx
+// will also need to be changed
+$tab-animation-duration: 0.15s;
+$tab-animation-mode: linear;
+$tab-default-foreground-color: $color-neutral-600;
+$tab-selected-foreground-color: $color-primary-500;
+$tab-hover-foreground-color: $color-primary-500;
+$tab-active-foreground-color: $color-primary-600;
+$tab-background-color: $color-neutral-100;
+$tab-font-size: 1rem;
+$tab-content-foreground-color: $color-neutral-900;
+$tab-item-padding-top: 1rem;
+$tab-item-padding-left: 1rem;
+$tab-item-line-height: 1.25rem;
+$tab-item-height: $tab-item-line-height + $tab-item-padding-top * 2;
+
+.#{$tab-prefix} {
+  display: grid;
+  grid-template: $tab-item-height calc(100% - #{$tab-item-height}) / 100%;
+  max-height: 100%;
+  background-color: $tab-background-color;
+  font-size: $tab-font-size;
+  
+  &--fullscreen {
+    height: 100%;
+  }
+
+  &__tab-group {
+    display: flex;
+    position: relative;
+    box-shadow: 0 0.0625rem 0.0625rem rgba($color-neutral-1100, 0.1);
+  }
+
+  &__tab-item {
+    flex: 1 0 0;
+    padding: $tab-item-padding-top $tab-item-padding-left;
+    line-height: $tab-item-line-height;
+    transition: color $tab-animation-duration $tab-animation-mode;
+    font-weight: 500;
+    color: $tab-default-foreground-color;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+
+    @media (hover: hover) {
+      &:hover {
+        color: $tab-hover-foreground-color;
+      }
+    }
+
+    &:focus-visible {
+      color: $tab-hover-foreground-color;
+    }
+
+    &:active {
+      color: $tab-active-foreground-color;
+    }
+
+    &--active {
+      color: $tab-selected-foreground-color;
+    }
+  }
+
+  &__active-indicator {
+    height: 0.25rem;
+    position: absolute;
+    bottom: 0;
+    background-color: $tab-selected-foreground-color;
+    transition: $tab-animation-duration $tab-animation-mode;
+  }
+
+  @media (hover: hover) {
+    &__tab-group:has(&__tab-item--active:hover) &__active-indicator {
+      background-color: $tab-hover-foreground-color;
+    }
+  }
+
+  &__tab-group:has(&__tab-item--active:active) &__active-indicator {
+    background-color: $tab-active-foreground-color;
+  }
+
+  &__content-group {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    width: 100%;
+  };
+
+  &__contents {
+    flex-direction: row;
+    will-change: transform;
+    flex: 1 0 100%;
+    display: flex;
+    height: 100%;
+    color: $tab-content-foreground-color;
+
+    > * {
+      flex: 1 0 100%;
+      box-sizing: border-box;
+      overflow: auto;
+      height: 100%;
+    }
+  };
+}

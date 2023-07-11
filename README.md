@@ -60,7 +60,7 @@
         </td>
         <td align="center" valign="top" width="33.33333%">
             <a href="./006%20-%20React%20Web%20Component%20Proof-of-Concept/">
-                <img src="https://github.com/icelam/just-for-fun/raw/master/006%20-%20React%20Web%20Component%20Proof-of-Concept/screenshot.png" width="220" alt="React and Recoil To-do List"/>
+                <img src="https://github.com/icelam/just-for-fun/raw/master/006%20-%20React%20Web%20Component%20Proof-of-Concept/screenshot.png" width="220" alt="React Web Component Proof-of-Concept"/>
                 <br />
                 <b>React Web Component Proof-of-Concept</b>
             </a>
@@ -72,7 +72,7 @@
     <tr>
         <td align="center" valign="top" width="33.33333%">
             <a href="./007%20-%20React%20Radio%20Group/">
-                <img src="https://github.com/icelam/just-for-fun/raw/master/007%20-%20React%20Radio%20Group/screenshot.png" width="220" alt="Sliding Border Animation on Navigation Menu"/>
+                <img src="https://github.com/icelam/just-for-fun/raw/master/007%20-%20React%20Radio%20Group/screenshot.png" width="220" alt="React Radio Group"/>
                 <br />
                 <b>React Radio Group</b>
             </a>
@@ -81,7 +81,13 @@
             <img src="https://img.shields.io/badge/CSS-grey?logo=css3" />
         </td>
         <td align="center" valign="top" width="33.33333%">
-            &nbsp;
+            <a href="./008%20-%20React%20Tab%20Component%20with%20Animation/">
+                <img src="https://github.com/icelam/just-for-fun/raw/master/008%20-%20React%20Tab%20Component%20with%20Animation/screenshot.png" width="220" alt="React Tab Component with Animation"/>
+                <br />
+                <b>React Tab Component with Animation</b>
+            </a>
+            <br />
+            <img src="https://img.shields.io/badge/React-grey?logo=react" />
         </td>
         <td align="center" valign="top" width="33.33333%">
             &nbsp;

@@ -1,0 +1,21 @@
+.plain-button {
+  padding: 0;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  background-color: transparent;
+  font-size: inherit;
+  font-family: inherit;
+  text-decoration: none;
+  line-height: inherit;
+  outline: none;
+  cursor: pointer;
+  margin: 0;
+  color: inherit;
+
+  &:disabled {
+    cursor: not-allowed;
+    // TODO: confirm with Marcas the disabled style
+    opacity: 70%;
+  }
+}

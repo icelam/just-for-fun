@@ -1,0 +1,35 @@
+{
+  "name": "react-tab-component-with-animation",
+  "version": "1.0.0",
+  "description": "React tab component with animation created using Framer Motion.",
+  "license": "MIT",
+  "homepage": "./",
+  "main": "src/index.tsx",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "build:demo": "BUILD_PATH='../docs/react-tab-component' react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "dependencies": {
+    "classnames": "^2.3.2",
+    "framer-motion": "^10.12.18",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-scripts": "^5.0.1",
+    "resize-observer-polyfill": "^1.5.1",
+    "sass": "^1.60.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.14",
+    "@types/react-dom": "^18.2.6",
+    "typescript": "^5.1.6"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}
