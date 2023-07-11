@@ -13,27 +13,28 @@ html, body {
   width: 100%;
   height: 100%;
   font-size: 16px;
-  line-height: 1.25;
-  font-family: 'Poppins', sans-serif;
-  background: $color-primary-shade-1;
-  color: $color-neutral-shade-8;
 }
 
 body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.25;
+  color: $color-neutral-shade-8;
+  background: $color-primary-shade-1;
   padding: env(safe-area-inset);
 }
 
 #root {
-  height: 100%;
+  height: min-content;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 1rem;
+  min-height: 100%;
 }
 
 #App {
   background-color: $color-white;
-  box-shadow: 0 3px 12px rgba($color-primary, 0.1), 0 0 1px $color-neutral-shade-2;
+  box-shadow: 0 0.25rem 0.75rem rgba($color-primary, 0.1), 0 0 0.0625rem $color-neutral-shade-2;
   width: 100%;
   max-width: 500px;
   border-radius: 1.25rem;
