@@ -1,0 +1,16 @@
+{
+  "name": "responsive-cards-without-media-queries",
+  "version": "1.0.0",
+  "description": "Responsive cards without media queries",
+  "license": "MIT",
+  "main": "index.html",
+  "scripts": {
+    "clean:demo": "npx rimraf ../docs/responsive-cards-without-media-queries",
+    "start": "parcel src/index.html --open",
+    "build": "parcel build src/index.html",
+    "build:demo": "yarn clean:demo && parcel build src/index.html --out-dir=../docs/responsive-cards-without-media-queries --public-url=./"
+  },
+  "dependencies": {
+    "parcel-bundler": "^1.6.1"
+  }
+}

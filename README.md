@@ -99,5 +99,22 @@
             <img src="https://img.shields.io/badge/React-grey?logo=react" />
         </td>
     </tr>
+    <tr>
+        <td align="center" valign="top" width="33.33333%">
+            <a href="./010%20-%20Responsive%20Cards%20without%20Media%20Queries/">
+                <img src="https://github.com/icelam/just-for-fun/raw/master/010%20-%20Responsive%20Cards%20without%20Media%20Queries/screenshot.png" width="220" alt="Responsive Cards without Media Queries"/>
+                <br />
+                <b>Responsive Cards without Media Queries</b>
+            </a>
+            <br />
+            <img src="https://img.shields.io/badge/CSS-grey?logo=css3" />
+        </td>
+        <td align="center" valign="top" width="33.33333%">
+            &nbsp;
+        </td>
+        <td align="center" valign="top" width="33.33333%">
+            &nbsp;
+        </td>
+    </tr>
   </tbody>
 </table>
