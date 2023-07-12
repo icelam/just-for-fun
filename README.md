@@ -90,7 +90,13 @@
             <img src="https://img.shields.io/badge/React-grey?logo=react" />
         </td>
         <td align="center" valign="top" width="33.33333%">
-            &nbsp;
+            <a href="./009%20-%20React%20Multiple%20Container%20Drag%20and%20Drop/">
+                <img src="https://github.com/icelam/just-for-fun/raw/master/009%20-%20React%20Multiple%20Container%20Drag%20and%20Drop/screenshot.png" width="220" alt="React Multiple Container Drag and Drop"/>
+                <br />
+                <b>React Multiple Container Drag and Drop</b>
+            </a>
+            <br />
+            <img src="https://img.shields.io/badge/React-grey?logo=react" />
         </td>
     </tr>
   </tbody>

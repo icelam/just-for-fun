@@ -1,0 +1,35 @@
+{
+  "name": "react-drag-and-drop",
+  "version": "1.0.0",
+  "description": "Drag and drop blocks between different containers using dnd kit",
+  "license": "MIT",
+  "main": "src/index.tsx",
+  "homepage": "./",
+  "dependencies": {
+    "@dnd-kit/core": "^6.0.8",
+    "@dnd-kit/modifiers": "^6.0.1",
+    "@dnd-kit/sortable": "^7.0.2",
+    "classnames": "^2.3.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-scripts": "^5.0.1",
+    "sass": "^1.63.6"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.14",
+    "@types/react-dom": "^18.2.6",
+    "typescript": "^5.1.6"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "build:demo": "BUILD_PATH='../docs/react-drag-and-drop' react-scripts build",
+    "test": "react-scripts test --env=jsdom"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}

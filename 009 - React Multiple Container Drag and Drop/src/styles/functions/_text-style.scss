@@ -1,0 +1,42 @@
+/*
+ * SASS implementation of text-stroke-generator by Owumaro
+ * https://github.com/Owumaro/text-stroke-generator/blob/master/index.js#L42
+ *
+ * Note that @use 'sass:math'; is not supported by node-sass, highly recommended
+ * to use dart-sass in-order to enjoy built-in modules.
+ *
+ * In case dart-sass cannot be used (e.g. an non-ejected Create React App),
+ * You can implement your own sin and cos function with Taylor Expansion:
+ * https://gist.github.com/kamikat/c4d472ce3c61feec6376
+ */
+
+// Generate text outline
+@function text-outline($stroke-width, $stroke-color, $stroke-offset-x: 0, $stroke-offset-y: 0) {
+  $angle: 0;
+  $result: null;
+  $blur-radius: 0;
+
+  @while $angle < (2 * math.$pi) {
+    $offset-x: math.cos($angle) * $stroke-width * 1px + $stroke-offset-x;
+    $offset-y: math.sin($angle) * $stroke-width * 1px + $stroke-offset-y;
+    $current-result: $offset-x $offset-y $blur-radius $stroke-color;
+    $result: $result, $current-result;
+    $angle: $angle + math.div(1, $stroke-width);
+  }
+
+  @return $result;
+}
+
+// Generate text shadow in respect to text outline
+@function oblique-text-shadow($width, $expand, $color, $step: 0.25) {
+  $layer: 0;
+  $result: null;
+
+  @while $layer < $width {
+    $current-layer: text-outline($expand, $color, $layer, $layer);
+    $result: $result, $current-layer;
+    $layer: $layer + $step;
+  }
+
+  @return $result;
+}
