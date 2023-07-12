@@ -27,7 +27,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(to top right, #7c89d5, #f599a5);
+  background: linear-gradient(to top right, #7c89d5, #f599a5) fixed;
   padding: 1rem;
   overflow: auto;
   font-family: 'Inter', sans-serif;
@@ -38,33 +38,13 @@ body {
   width: 500px;
   margin: 0;
   box-shadow: 0 0 0 0.0625rem rgba(0, 0, 0, 0.04), 0 0.0625rem 0.25rem 0 rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.04) 0 0 0 0.0625rem inset;
-  padding: 1rem;
+  padding: 2rem;
   background-color: var(--color-light-grey);
-  border-radius: 0.5rem;
-}
-
-.pie-chart .chart {
-  width: 230px;
-  height: 230px;
-  border-radius: 100%;
-  background: radial-gradient(circle, transparent 100%, var(--color-white) 0),
-    conic-gradient(
-      var(--color-pie-chart-1) 0,
-      var(--color-pie-chart-1) 70.8%,
-      var(--color-pie-chart-2) 0,
-      var(--color-pie-chart-2) 77.1%,
-      var(--color-pie-chart-3) 0,
-      var(--color-pie-chart-3) 85.4%,
-      var(--color-pie-chart-4) 0,
-      var(--color-pie-chart-4) 93.7%,
-      var(--color-pie-chart-5) 0,
-      var(--color-pie-chart-5) 100%
-    );
-  margin: 1.5rem auto 1rem;
+  border-radius: 1.25rem;
 }
 
 .pie-chart h2 {
-  margin: 1rem 0;
+  margin: 0 0 1rem 0;
   padding: 0 1rem;
   width: 100%;
   text-align: center;
@@ -79,6 +59,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin-bottom: 1.5rem;
 }
 
 .pie-chart figcaption .caption-label {
@@ -92,7 +73,6 @@ body {
   width: 0.8em;
   height: 0.8em;
   margin-left: 0.4em;
-  height: 0.8em;
   border-radius: 0.2em;
 }
 
@@ -120,4 +100,30 @@ body {
   float: right;
   margin-left: 10px;
   text-align: right;
+}
+
+.pie-chart .chart {
+  max-width: 230px;
+  width: 80%;
+  border-radius: 100%;
+  background: radial-gradient(circle, transparent 100%, var(--color-white) 0),
+    conic-gradient(
+      var(--color-pie-chart-1) 0,
+      var(--color-pie-chart-1) 70.8%,
+      var(--color-pie-chart-2) 0,
+      var(--color-pie-chart-2) 77.1%,
+      var(--color-pie-chart-3) 0,
+      var(--color-pie-chart-3) 85.4%,
+      var(--color-pie-chart-4) 0,
+      var(--color-pie-chart-4) 93.7%,
+      var(--color-pie-chart-5) 0,
+      var(--color-pie-chart-5) 100%
+    );
+  margin: 0 auto;
+}
+
+.pie-chart .chart:after {
+  content: '';
+  display: block;
+  padding-bottom: 100%;
 }
