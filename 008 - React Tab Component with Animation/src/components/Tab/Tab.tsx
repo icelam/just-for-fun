@@ -108,7 +108,7 @@ const Tab: FC<PropsWithChildren<TabProps>> = ({
       <motion.div className={bem(componentName, { element: 'content-group' })}>
         <motion.div
           className={bem(componentName, { element: 'contents' })}
-          transition={transitionOptions}
+          transition={{ ...transitionOptions, duration: 0.3 }}
           initial={false}
           animate={{ x: `${selectedTabIndex * -100}%` }}
         >
