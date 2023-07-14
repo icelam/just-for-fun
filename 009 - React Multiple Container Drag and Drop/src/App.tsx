@@ -23,7 +23,6 @@ import {
   getFirstCollision,
 } from '@dnd-kit/core';
 import { arrayMove, sortableKeyboardCoordinates } from '@dnd-kit/sortable';
-import { restrictToWindowEdges } from '@dnd-kit/modifiers';
 
 import Container from './Container';
 import { Item } from './SortableItem';
