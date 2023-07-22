@@ -110,7 +110,13 @@
             <img src="https://img.shields.io/badge/CSS-grey?logo=css3" />
         </td>
         <td align="center" valign="top" width="33.33333%">
-            &nbsp;
+            <a href="./011%20-%20Pride%20Text%20Effect%20using%20CSS/">
+                <img src="https://github.com/icelam/just-for-fun/raw/master/011%20-%20Pride%20Text%20Effect%20using%20CSS/screenshot.png" width="220" alt="Pride Text Effect using CSS"/>
+                <br />
+                <b>Pride Text Effect using CSS</b>
+            </a>
+            <br />
+            <img src="https://img.shields.io/badge/CSS-grey?logo=css3" />
         </td>
         <td align="center" valign="top" width="33.33333%">
             &nbsp;

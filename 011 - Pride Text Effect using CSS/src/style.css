@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@900&display=swap');
+
+:root {
+  --color-white: #ffffff;
+  --color-black: #000000;
+  --color-red: #F60000;
+  --color-orange: #FF8C00;
+  --color-yellow: #FFEE00;
+  --color-green: #4DE94C;
+  --color-blue: #3783FF;
+  --color-purple: #882FF6;
+  --color-sky-blue: #06D8F6;
+  --shadow-offset: 0.1em;
+}
+
+html, body {
+  font-size: 16px;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: min-height;
+  min-height: 100%;
+  background-color: var(--color-sky-blue);
+  padding: env(safe-area-inset);
+}
+
+.text {
+  position: relative;
+  font-size: 6rem;
+  background: repeating-linear-gradient(
+    135deg,
+    var(--color-red),
+    var(--color-red) 1.5rem,
+    var(--color-orange) 1.5rem,
+    var(--color-orange) 3rem,
+    var(--color-yellow) 3rem,
+    var(--color-yellow) 4.5rem,
+    var(--color-green) 4.5rem,
+    var(--color-green) 6rem,
+    var(--color-blue) 6rem,
+    var(--color-blue) 7.5rem,
+    var(--color-purple) 7.5rem,
+    var(--color-purple) 9rem
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-weight: 900;
+  left: calc(var(--shadow-offset) / 2 * -1);
+  line-height: 1em;
+}
+
+.text:after {
+  z-index: -1;
+  position: absolute;
+  left: 0;
+  content: 'Pride';
+  -webkit-text-stroke-width: 0.2em;
+  -webkit-text-stroke-color: var(--color-black);
+  filter: drop-shadow(var(--shadow-offset) var(--shadow-offset) var(--color-white));
+}

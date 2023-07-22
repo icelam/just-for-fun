@@ -1,0 +1,16 @@
+{
+  "name": "pride-text-effect",
+  "version": "1.0.0",
+  "description": "Rainbow colored text with text stroke and text shadow effect using CSS",
+  "main": "index.html",
+  "license": "MIT",
+  "scripts": {
+    "clean:demo": "npx rimraf ../docs/pride-text-effect",
+    "start": "parcel src/index.html --open",
+    "build": "parcel build src/index.html",
+    "build:demo": "yarn clean:demo && parcel build src/index.html --out-dir=../docs/pride-text-effect --public-url=./"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.12.5"
+  }
+}
