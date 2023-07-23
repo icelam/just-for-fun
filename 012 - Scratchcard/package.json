@@ -1,0 +1,25 @@
+{
+  "name": "scratchcard",
+  "version": "1.0.0",
+  "description": "Scratchcard made with HTML 5 canvas",
+  "scripts": {
+    "clean:demo": "npx rimraf ../docs/scratchcard",
+    "start": "parcel src/index.html --open",
+    "build": "parcel build ./src/index.html --no-cache",
+    "build:demo": "yarn clean:demo && parcel build src/index.html --no-cache --dist-dir=../docs/scratchcard --public-url=./"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.4.0",
+    "parcel": "^2.9.3"
+  },
+  "keywords": [
+    "javascript",
+    "starter"
+  ],
+  "devDependencies": {
+    "@parcel/transformer-sass": "2.9.3",
+    "@parcel/transformer-typescript-tsc": "^2.9.3",
+    "sass": "^1.64.1",
+    "typescript": "^5.1.6"
+  }
+}

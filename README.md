@@ -119,7 +119,15 @@
             <img src="https://img.shields.io/badge/CSS-grey?logo=css3" />
         </td>
         <td align="center" valign="top" width="33.33333%">
-            &nbsp;
+            <a href="./012%20-%20Scratchcard/">
+                <img src="https://github.com/icelam/just-for-fun/raw/master/012%20-%20Scratchcard/screenshot.png" width="220" alt="Scratchcard"/>
+                <br />
+                <b>Scratchcard</b>
+            </a>
+            <br />
+            <img src="https://img.shields.io/badge/HTML-grey?logo=html5" />
+            <img src="https://img.shields.io/badge/CSS-grey?logo=css3" />
+            <img src="https://img.shields.io/badge/Javascript-grey?logo=javascript" />
         </td>
     </tr>
   </tbody>

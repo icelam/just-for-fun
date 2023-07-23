@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="language" content="English">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no, viewport-fit=cover">
+    <meta name="format-detection" content="telephone=no, date=no, address=no, email=no">
+    <title>Scratchcard</title>
+    <link rel="stylesheet" href="./styles/index.scss" type="text/css" />
+  </head>
+
+  <body>
+    <div id="app">
+      <div class="header">
+        <h1>Scratchcard</h1>
+        <button type="button" id="scratch-reset-button">Reset</button>
+      </div>
+
+      <div class="content">
+        <div class="card">
+          <div class="card__title">Lucky Scratch</div>
+          <div class="card__group">
+            <div class="card__subtitle">
+              <i class="fa-solid fa-caret-down"></i>
+              <span>Scratch & Win</span>
+              <i class="fa-solid fa-caret-down"></i>
+            </div>
+
+            <div class="card__scratch-area">
+							<span>First Prize</span>
+							<canvas width="206" height="132" id="scratch-canvas">
+            </div>
+
+            <div class="card__instructions">Scratch with coin</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./index.ts" type="module"></script>
+  </body>
+</html>
