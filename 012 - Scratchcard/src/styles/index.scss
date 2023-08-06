@@ -165,28 +165,28 @@ body {
     position: relative;
     margin: 1rem 0;
 
-    span {
-      user-select: none;
-      background: linear-gradient(
-        135deg,
-        $color-rainbow-1 14.2857%,
-        $color-rainbow-2 28.5714%,
-        $color-rainbow-3 42.8571%,
-        $color-rainbow-4 57.1429%,
-        $color-rainbow-5 71.4286%,
-        $color-rainbow-6 100%
-      );
-      width: min-content;
-      -webkit-background-clip: text;
-      background-clip: text;
-      color: transparent;
-    }
-
     canvas {
       position: absolute;
       top: 0;
       left: 0;
     }
+  }
+
+  &__prize-text {
+    user-select: none;
+    background: linear-gradient(
+      135deg,
+      $color-rainbow-1 14.2857%,
+      $color-rainbow-2 28.5714%,
+      $color-rainbow-3 42.8571%,
+      $color-rainbow-4 57.1429%,
+      $color-rainbow-5 71.4286%,
+      $color-rainbow-6 100%
+    );
+    width: min-content;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
   }
 
   &__instructions {

@@ -2,6 +2,8 @@
   "compilerOptions": {
     "module": "esnext",
     "jsx": "preserve",
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
     "esModuleInterop": true,
     "sourceMap": true,
     "allowJs": true,
@@ -10,6 +12,6 @@
       "dom"
     ],
     "rootDir": "src",
-    "moduleResolution": "node"
+    "moduleResolution": "node",
   }
 }
