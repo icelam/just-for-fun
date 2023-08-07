@@ -1,5 +1,3 @@
-type Maybe<T> = T | undefined | null;
-
 class ScratchCanvas {
   /** Canvas element */
   private canvas: HTMLCanvasElement;
@@ -47,7 +45,7 @@ class ScratchCanvas {
     }
 
     if (!prizeTextElement) {
-      throw new Error('NULLISH_PRIORITY_TEXT');
+      throw new Error('NULLISH_PRIZE_TEXT');
     }
 
     if (!resetButtonElement) {
@@ -78,8 +76,8 @@ class ScratchCanvas {
         duration: 200,
         easing: 'ease-in-out',
         iterations: 1,
-        fill: 'forwards'
-      }
+        fill: 'forwards',
+      },
     );
 
     this.canvasAnimation.cancel();
@@ -88,14 +86,14 @@ class ScratchCanvas {
       [
         { transform: 'none' },
         { transform: 'scale(1.125)' },
-        { transform: 'none' }
+        { transform: 'none' },
       ],
       {
         duration: 600,
         easing: 'ease-in-out',
         iterations: 1,
-        fill: 'forwards'
-      }
+        fill: 'forwards',
+      },
     );
 
     this.prizeTextAnimation.cancel();
@@ -142,17 +140,26 @@ class ScratchCanvas {
     }
   }
 
-  /** Mouse Up function */
-  private canvasMouseUp(event: MouseEvent) {
+  /**
+   * Mouse Up function
+   * @returns {boolean} Whether draw is ended base on original drawing state.
+   */
+  private canvasMouseUp(event: MouseEvent): boolean {
     if (this.isDrawing) {
       const { x, y } = this.getMousePosition(event);
       this.context.lineTo(x, y);
       this.context.stroke();
       this.isDrawing = false;
+      return true;
     }
+
+    return false;
   }
 
-  /** Touch Start function */
+  /**
+   * Touch Start function
+   * @returns {boolean} Whether draw is started base on original drawing state.
+   */
   private canvasTouchStart(event: TouchEvent) {
     event.preventDefault();
 
@@ -162,7 +169,11 @@ class ScratchCanvas {
       const { touchX, touchY } = this.getTouchPosition(event);
       this.context.beginPath();
       this.context.moveTo(touchX, touchY);
+
+      return true;
     }
+
+    return false;
   }
 
   /** Touch Move function */
@@ -212,7 +223,7 @@ class ScratchCanvas {
     );
     const pixelData = imageData.data;
 
-    let blackPixelCount = 0;
+    let transparentPixelCount = 0;
 
     for (let i = 0; i < pixelData.length; i += 4) {
       const red = pixelData[i];
@@ -221,11 +232,11 @@ class ScratchCanvas {
       const alpha = pixelData[i + 3];
 
       if (red === 0 && green === 0 && blue === 0 && alpha === 0) {
-        blackPixelCount++;
+        transparentPixelCount++;
       }
     }
 
-    const transparentAreaPercentage = blackPixelCount * 100 / (prizeTextWidth * prizeTextHeight);
+    const transparentAreaPercentage = transparentPixelCount * 100 / (prizeTextWidth * prizeTextHeight);
     return transparentAreaPercentage >= 90;
   }
 
@@ -239,7 +250,7 @@ class ScratchCanvas {
       return;
     }
 
-    this.hasWon = true
+    this.hasWon = true;
     this.canvasAnimation.play();
     this.prizeTextAnimation.play();
   }
@@ -266,7 +277,7 @@ class ScratchCanvas {
     // 'mousemove' and 'mouseup' is attached to window instead of canvas
     // to properly end drawing when mouse releases outside of canvas
     const onMouseDown = (event: MouseEvent) => {
-      window.clearTimeout(prizeTextVisibleCheckTimer);
+      // window.clearTimeout(prizeTextVisibleCheckTimer);
       this.canvasMouseDown(event);
     };
 
@@ -275,16 +286,17 @@ class ScratchCanvas {
     };
 
     const onMouseUp = (event: MouseEvent) => {
-      this.canvasMouseUp(event);
+      const wasDrawing = this.canvasMouseUp(event);
 
-      // Add a resonable delay so that winning animation does not appear immediately when clicking
-      // on reset button since canvas is properly not filled at that point.
-      window.clearTimeout(prizeTextVisibleCheckTimer);
-      prizeTextVisibleCheckTimer = window.setTimeout(() => {
-        if (this.isPrizeTextVisible()) {
-          this.showWinningAnimation();
-        }
-      }, this.checkDebounceDuration);
+      if (wasDrawing) {
+        // Add a resonable delay so that we do not trigger heavy canvas data check operation too frequently.
+        // window.clearTimeout(prizeTextVisibleCheckTimer);
+        // prizeTextVisibleCheckTimer = window.setTimeout(() => {
+          if (this.isPrizeTextVisible()) {
+            this.showWinningAnimation();
+          }
+        // }, this.checkDebounceDuration);
+      }
     };
 
     this.canvas.addEventListener('mousedown', onMouseDown);
