@@ -88,6 +88,7 @@
             </a>
             <br />
             <img src="https://img.shields.io/badge/React-grey?logo=react" />
+            <img src="https://img.shields.io/badge/CSS-grey?logo=css3" />
         </td>
         <td align="center" valign="top" width="33.33333%">
             <a href="./009%20-%20React%20Multiple%20Container%20Drag%20and%20Drop/">
@@ -107,6 +108,7 @@
                 <b>Responsive Cards without Media Queries</b>
             </a>
             <br />
+            <img src="https://img.shields.io/badge/HTML-grey?logo=html5" />
             <img src="https://img.shields.io/badge/CSS-grey?logo=css3" />
         </td>
         <td align="center" valign="top" width="33.33333%">
@@ -116,6 +118,7 @@
                 <b>Pride Text Effect using CSS</b>
             </a>
             <br />
+            <img src="https://img.shields.io/badge/HTML-grey?logo=html5" />
             <img src="https://img.shields.io/badge/CSS-grey?logo=css3" />
         </td>
         <td align="center" valign="top" width="33.33333%">

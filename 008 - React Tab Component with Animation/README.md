@@ -9,6 +9,7 @@ React tab component with animation created using Framer Motion.
 ## Tech Stack
 
 - React
+- CSS
 
 ## How to start
 

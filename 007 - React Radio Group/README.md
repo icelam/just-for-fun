@@ -14,6 +14,7 @@ The component have hover and focus effect adjusted based on the following rules:
 ## Tech Stack
 
 - React
+- CSS
 
 ## How to start
 
