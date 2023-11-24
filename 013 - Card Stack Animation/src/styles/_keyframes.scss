@@ -1,0 +1,29 @@
+@use 'sass:math';
+
+@import './variables';
+
+@keyframes slide {
+  #{math.div(50, $card-count)}% {
+    transform: translateX(105%) rotate(var(--card-rotation));
+  }
+  0%,
+  100%,
+  #{math.div(100, $card-count)}% {
+      transform: translateX(0%) rotate(var(--card-rotation));
+  }
+}
+
+@keyframes z-order {
+  0% {
+    z-index: 4;
+  }
+  #{math.div(50, $card-count)}% {
+    z-index: 1;
+  }
+  #{math.div(100, $card-count)}% {
+    z-index: 2;
+  }
+  #{100 - math.div(100, $card-count)}% {
+    z-index: 3;
+  }
+}

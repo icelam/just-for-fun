@@ -1,0 +1,23 @@
+{
+  "name": "card-stack-animation",
+  "version": "1.0.0",
+  "description": "Pure CSS Card Stack Animation",
+  "scripts": {
+    "clean:demo": "npx rimraf ../docs/card-stack-animation",
+    "start": "parcel src/index.html --open",
+    "build": "parcel build ./src/index.html --no-cache",
+    "build:demo": "yarn clean:demo && parcel build src/index.html --no-cache --dist-dir=../docs/card-stack-animation --public-url=./"
+  },
+  "dependencies": {
+    "parcel": "^2.9.3"
+  },
+  "keywords": [
+    "javascript",
+    "starter"
+  ],
+  "devDependencies": {
+    "@parcel/transformer-sass": "2.10.3",
+    "@parcel/transformer-typescript-tsc": "^2.10.3",
+    "typescript": ">=3.0.0"
+  }
+}

@@ -130,5 +130,21 @@
             <img src="https://img.shields.io/badge/Javascript-grey?logo=javascript" />
         </td>
     </tr>
+    <tr>
+        <td align="center" valign="top" width="33.33333%">
+            <a href="./013%20-%20Card%20Stack%20Animation/">
+                <img src="https://github.com/icelam/just-for-fun/raw/master/013%20-%20Card%20Stack%20Animation/screenshot.png" width="220" alt="Card Stack Animation"/>
+                <br />
+                <b>Card Stack Animation</b>
+            </a>
+            <br />
+            <img src="https://img.shields.io/badge/HTML-grey?logo=html5" />
+            <img src="https://img.shields.io/badge/CSS-grey?logo=css3" />
+        </td>
+        <td align="center" valign="top" width="33.33333%">
+        </td>
+        <td align="center" valign="top" width="33.33333%">
+        </td>
+    </tr>
   </tbody>
 </table>

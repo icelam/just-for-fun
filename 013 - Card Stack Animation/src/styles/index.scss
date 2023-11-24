@@ -1,0 +1,150 @@
+@import './variables';
+@import './fonts';
+@import './keyframes';
+
+* {
+  -webkit-text-size-adjust: 100%;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
+}
+
+:root {
+  --card-count: #{$card-count};
+  --card-height: 18.5rem;
+  --card-width: 31.125rem;
+  --slide-duration: 15s;
+  --card-line-height: 1.6875rem;
+  --color-light-grey: #eeeeee;
+  --color-light-brown: #f3cc92; // Or #edd5b2
+  --color-light-red: #ff7773;
+  --color-light-blue: #65d7eb;
+  --color-navy-blue: #0d3082;
+  --color-red: #ef3912;
+  --color-sharp-yellow: #8cff32;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  font-size: 16px;
+  font-size: clamp(8px, 2.75vw, 24px);
+  line-height: 1.25;
+  font-family: "Caveat", sans-serif;
+}
+
+body {
+  padding: calc(4rem + env(safe-area-inset-top)) 0
+    calc(4rem + env(safe-area-inset-bottom)) 0;
+  height: min-content;
+  min-height: 100%;
+  background: var(--color-light-brown) url("../images/wood-pattern.png");
+  background-size: clamp(200px, 50vw, 317px);
+  background-repeat: repeat;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.stack {
+  height: var(--card-height);
+  width: var(--card-width);
+  position: relative;
+  flex: 0 0 auto;
+
+
+}
+
+.card {
+  /* Card styles */
+  position: absolute;
+  margin-top: calc(var(--card-height) / 2 * -1);
+  margin-left: calc(var(--card-width) / 2 * -1);
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0.0625rem 0.0625rem 0.25rem rgba(0, 0, 0, 0.25);
+  background:
+    linear-gradient(
+      to bottom,
+      transparent,
+      transparent calc(var(--card-line-height) - 0.0625rem),
+      var(--color-light-red) calc(var(--card-line-height) - 0.0625rem),
+      var(--color-light-red) var(--card-line-height),
+      transparent var(--card-line-height)
+    ),
+    var(--color-light-grey)
+      repeating-linear-gradient(
+        transparent,
+        transparent calc(var(--card-line-height) - 0.0625rem),
+        var(--color-light-blue) calc(var(--card-line-height) - 0.0625rem),
+        var(--color-light-blue) var(--card-line-height)
+      );
+  /* use translate3d to enable anti-alias */
+  transform: rotate(var(--card-rotation)) translate3d(0, 0, 0);
+
+  /* Font styles */
+  font-size: calc(var(--card-line-height) - 0.3725rem);
+  padding: var(--card-line-height) 0.75rem 0 0.75rem;
+  line-height: 1.6875rem !important;
+  text-align: justify;
+  color: var(--color-navy-blue);
+
+  /* Line Clamp */
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 10;
+  overflow: hidden;
+
+  /* Animation */
+  animation:
+    slide var(--slide-duration) infinite,
+    z-order var(--slide-duration) infinite steps(1);
+}
+
+.card:nth-child(1) {
+  --card-rotation: 1deg;
+  animation-delay: calc(0 / var(--card-count) * var(--slide-duration));
+}
+
+.card:nth-child(2) {
+  --card-rotation: -5deg;
+  animation-delay: calc(-2 / var(--card-count) * var(--slide-duration));
+  margin-left: calc(var(--card-width) / 2 * -1 - 0.25rem);
+}
+
+.card:nth-child(3) {
+  --card-rotation: -2deg;
+  animation-delay: calc(-1 / var(--card-count) * var(--slide-duration));
+  margin-left: calc(var(--card-width) / 2 * -1 + 0.625rem);
+}
+
+.highlight {
+  background: linear-gradient(
+    -2deg,
+    transparent 30%,
+    var(--color-sharp-yellow) 30%,
+    var(--color-sharp-yellow) 70%,
+    transparent 70%
+  );
+}
+
+.card u,
+.underline {
+  text-decoration: underline wavy;
+  text-decoration-color: var(--color-red);
+  text-decoration-skip-ink: none;
+}
+
+/* Fallback for browsers that does not support clamp */
+@media screen and (max-width: 575px) {
+  html {
+    font-size: 2.75vw;
+    font-size: clamp(8px, 2.75vw, 24px);
+  }
+}
