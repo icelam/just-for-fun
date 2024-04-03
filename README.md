@@ -12,7 +12,7 @@
     <tr>
         <td align="center" valign="top" width="33.33333%">
             <a href="./001%20-%20Vanilla%20JS%20Coin%20Counter%20using%20Signals/">
-                <img src="https://github.com/icelam/just-for-fun/raw/master/001%20-%20Vanilla%20JS%20Coin%20Counter%20using%20Signals/screenshot.png" width="220" alt="Vanilla JS Coin Counter using Signals"/>
+                <img src="./001%20-%20Vanilla%20JS%20Coin%20Counter%20using%20Signals/screenshot.png" width="220" alt="Vanilla JS Coin Counter using Signals"/>
                 <br />
                 <b>Vanilla JS Coin Counter using Signals</b>
             </a>
@@ -21,7 +21,7 @@
         </td>
         <td align="center" valign="top" width="33.33333%">
             <a href="./002%20-%20CSS%20Pie%20Chart/">
-                <img src="https://github.com/icelam/just-for-fun/raw/master/002%20-%20CSS%20Pie%20Chart/screenshot.png" width="220" alt="CSS Pie Chart"/>
+                <img src="./002%20-%20CSS%20Pie%20Chart/screenshot.png" width="220" alt="CSS Pie Chart"/>
                 <br />
                 <b>CSS Pie Chart</b>
             </a>
@@ -30,7 +30,7 @@
         </td>
         <td align="center" valign="top" width="33.33333%">
             <a href="./003%20-%20Comics%20Style%20Text%20Outline%20and%20Oblique%20Shadow/">
-                <img src="https://github.com/icelam/just-for-fun/raw/master/003%20-%20Comics%20Style%20Text%20Outline%20and%20Oblique%20Shadow/screenshot.png" width="220" alt="Comics Style Text Effect"/>
+                <img src="./003%20-%20Comics%20Style%20Text%20Outline%20and%20Oblique%20Shadow/screenshot.png" width="220" alt="Comics Style Text Effect"/>
                 <br />
                 <b>Comics Style Text Effect</b>
             </a>
@@ -41,7 +41,7 @@
     <tr>
         <td align="center" valign="top" width="33.33333%">
             <a href="./004%20-%20Sliding%20Border%20Animation%20on%20Navigation%20Menu/">
-                <img src="https://github.com/icelam/just-for-fun/raw/master/004%20-%20Sliding%20Border%20Animation%20on%20Navigation%20Menu/screenshot.png" width="220" alt="Sliding Border Animation on Navigation Menu"/>
+                <img src="./004%20-%20Sliding%20Border%20Animation%20on%20Navigation%20Menu/screenshot.png" width="220" alt="Sliding Border Animation on Navigation Menu"/>
                 <br />
                 <b>Sliding Border Animation on Navigation Menu</b>
             </a>
@@ -51,7 +51,7 @@
         </td>
         <td align="center" valign="top" width="33.33333%">
             <a href="./005%20-%20React%20and%20Recoil%20To-do%20List/">
-                <img src="https://github.com/icelam/just-for-fun/raw/master/005%20-%20React%20and%20Recoil%20To-do%20List/screenshot.png" width="220" alt="React and Recoil To-do List"/>
+                <img src="./005%20-%20React%20and%20Recoil%20To-do%20List/screenshot.png" width="220" alt="React and Recoil To-do List"/>
                 <br />
                 <b>React and Recoil To-do List</b>
             </a>
@@ -60,7 +60,7 @@
         </td>
         <td align="center" valign="top" width="33.33333%">
             <a href="./006%20-%20React%20Web%20Component%20Proof-of-Concept/">
-                <img src="https://github.com/icelam/just-for-fun/raw/master/006%20-%20React%20Web%20Component%20Proof-of-Concept/screenshot.png" width="220" alt="React Web Component Proof-of-Concept"/>
+                <img src="./006%20-%20React%20Web%20Component%20Proof-of-Concept/screenshot.png" width="220" alt="React Web Component Proof-of-Concept"/>
                 <br />
                 <b>React Web Component Proof-of-Concept</b>
             </a>
@@ -72,7 +72,7 @@
     <tr>
         <td align="center" valign="top" width="33.33333%">
             <a href="./007%20-%20React%20Radio%20Group/">
-                <img src="https://github.com/icelam/just-for-fun/raw/master/007%20-%20React%20Radio%20Group/screenshot.png" width="220" alt="React Radio Group"/>
+                <img src="./007%20-%20React%20Radio%20Group/screenshot.png" width="220" alt="React Radio Group"/>
                 <br />
                 <b>React Radio Group</b>
             </a>
@@ -82,7 +82,7 @@
         </td>
         <td align="center" valign="top" width="33.33333%">
             <a href="./008%20-%20React%20Tab%20Component%20with%20Animation/">
-                <img src="https://github.com/icelam/just-for-fun/raw/master/008%20-%20React%20Tab%20Component%20with%20Animation/screenshot.png" width="220" alt="React Tab Component with Animation"/>
+                <img src="./008%20-%20React%20Tab%20Component%20with%20Animation/screenshot.png" width="220" alt="React Tab Component with Animation"/>
                 <br />
                 <b>React Tab Component with Animation</b>
             </a>
@@ -92,7 +92,7 @@
         </td>
         <td align="center" valign="top" width="33.33333%">
             <a href="./009%20-%20React%20Multiple%20Container%20Drag%20and%20Drop/">
-                <img src="https://github.com/icelam/just-for-fun/raw/master/009%20-%20React%20Multiple%20Container%20Drag%20and%20Drop/screenshot.png" width="220" alt="React Multiple Container Drag and Drop"/>
+                <img src="./009%20-%20React%20Multiple%20Container%20Drag%20and%20Drop/screenshot.png" width="220" alt="React Multiple Container Drag and Drop"/>
                 <br />
                 <b>React Multiple Container Drag and Drop</b>
             </a>
@@ -103,7 +103,7 @@
     <tr>
         <td align="center" valign="top" width="33.33333%">
             <a href="./010%20-%20Responsive%20Cards%20without%20Media%20Queries/">
-                <img src="https://github.com/icelam/just-for-fun/raw/master/010%20-%20Responsive%20Cards%20without%20Media%20Queries/screenshot.png" width="220" alt="Responsive Cards without Media Queries"/>
+                <img src="./010%20-%20Responsive%20Cards%20without%20Media%20Queries/screenshot.png" width="220" alt="Responsive Cards without Media Queries"/>
                 <br />
                 <b>Responsive Cards without Media Queries</b>
             </a>
@@ -113,7 +113,7 @@
         </td>
         <td align="center" valign="top" width="33.33333%">
             <a href="./011%20-%20Pride%20Text%20Effect%20using%20CSS/">
-                <img src="https://github.com/icelam/just-for-fun/raw/master/011%20-%20Pride%20Text%20Effect%20using%20CSS/screenshot.png" width="220" alt="Pride Text Effect using CSS"/>
+                <img src="./011%20-%20Pride%20Text%20Effect%20using%20CSS/screenshot.png" width="220" alt="Pride Text Effect using CSS"/>
                 <br />
                 <b>Pride Text Effect using CSS</b>
             </a>
@@ -123,7 +123,7 @@
         </td>
         <td align="center" valign="top" width="33.33333%">
             <a href="./012%20-%20Scratchcard/">
-                <img src="https://github.com/icelam/just-for-fun/raw/master/012%20-%20Scratchcard/screenshot.png" width="220" alt="Scratchcard"/>
+                <img src="./012%20-%20Scratchcard/screenshot.png" width="220" alt="Scratchcard"/>
                 <br />
                 <b>Scratchcard</b>
             </a>
@@ -136,7 +136,7 @@
     <tr>
         <td align="center" valign="top" width="33.33333%">
             <a href="./013%20-%20Card%20Stack%20Animation/">
-                <img src="https://github.com/icelam/just-for-fun/raw/master/013%20-%20Card%20Stack%20Animation/screenshot.png" width="220" alt="Card Stack Animation"/>
+                <img src="./013%20-%20Card%20Stack%20Animation/screenshot.png" width="220" alt="Card Stack Animation"/>
                 <br />
                 <b>Card Stack Animation</b>
             </a>
@@ -145,6 +145,15 @@
             <img src="https://img.shields.io/badge/CSS-grey?logo=css3" />
         </td>
         <td align="center" valign="top" width="33.33333%">
+            <a href="./014%20-%20Hide%20Header%20on%20Scroll%20using%20Framer%20Motion/">
+                <img src="./014%20-%20Hide%20Header%20on%20Scroll%20using%20Framer%20Motion/screenshot.jpg" width="220" alt="Hide Header on Scroll using Framer Motion"/>
+                <br />
+                <b>Hide Header on Scroll using Framer Motion</b>
+            </a>
+            <br />
+            <img src="https://img.shields.io/badge/React-grey?logo=react" />
+            <img src="https://img.shields.io/badge/CSS-grey?logo=css3" />
+            <img src="https://img.shields.io/badge/Framer%20Motion-grey?logo=framer" />
         </td>
         <td align="center" valign="top" width="33.33333%">
         </td>

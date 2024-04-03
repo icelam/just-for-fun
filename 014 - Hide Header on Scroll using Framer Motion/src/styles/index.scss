@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+:root {
+  --var-max-content-width: 1000px;
+  --var-header-height: 5.25rem;
+  --color-white: #ffffff;
+  --color-gray: #777777;
+  --color-dark-gray: #222222;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background-color: var(--color-white);
+  color: var(--color-gray);
+  line-height: 1.5;
+}
+
+article {
+  width: 100%;
+  max-width: var(--var-max-content-width);
+  margin: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--color-dark-gray);
+}
+
+header {
+  background-color: var(--color-white);
+  height: var(--var-header-height);
+  position: fixed;
+  top: 0;
+  transition: top 0.2s ease-in-out;
+  width: 100%;
+  max-width: var(--var-max-content-width);
+  padding: 2rem 1rem;
+  box-sizing: border-box;
+  z-index: 100;
+}
+
+header h3 {
+  margin: 0;
+  line-height: 1em;
+  font-size: 1.25rem;
+}
+
+p {
+  font-size: 1.125rem;
+  margin: 1em 0;
+}
+
+main {
+  padding: var(--var-header-height) 1rem 1rem;
+}
+
+figure {
+  width: 100%;
+  margin: 0;
+  position: relative;
+}
+
+figure img {
+  display: block;
+  object-fit: cover;
+  object-position: bottom;
+  aspect-ratio: 3;
+  min-height: 12.5rem;
+  width: 100%;
+  border-radius: 0.5rem;
+  filter: brightness(0.75) saturate(1.2) contrast(0.85);
+}
+
+figure figcaption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 1.5rem;
+  font-size: 1.725rem;
+  font-weight: bold;
+  color: var(--color-white);
+  opacity: 0.9;
+  text-wrap: balance;
+}
+
+figure figcaption time {
+  font-size: 1rem;
+  color: var(--color-white);
+  opacity: 0.8;
+  font-weight: normal;
+}

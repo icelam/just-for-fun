@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "./static/css/main.ff88b188.css",
+    "main.js": "./static/js/main.36e6cc6c.js",
+    "static/media/richard-tao-jlJFU9QBfFc-unsplash.jpg": "./static/media/richard-tao-jlJFU9QBfFc-unsplash.c168c9890cbe0d34605d.jpg",
+    "index.html": "./index.html",
+    "main.ff88b188.css.map": "./static/css/main.ff88b188.css.map",
+    "main.36e6cc6c.js.map": "./static/js/main.36e6cc6c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ff88b188.css",
+    "static/js/main.36e6cc6c.js"
+  ]
+}
